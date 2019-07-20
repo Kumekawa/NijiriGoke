@@ -131,12 +131,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BaseButton.cpp" />
+    <ClCompile Include="Block.cpp" />
+    <ClCompile Include="Field.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MasterButton.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BaseObject.h" />
     <ClInclude Include="Block.h" />
+    <ClInclude Include="BaseButton.h" />
     <ClInclude Include="Field.h" />
+    <ClInclude Include="MacroColor.h" />
+    <ClInclude Include="MasterButton.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

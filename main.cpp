@@ -4,6 +4,8 @@
 #include <string.h>
 #include <stdarg.h>
 #include "MyHeader.h"
+#include "MyHeader.cpp"
+#include "Field.h"
 
 #define XSIZEMAX 960
 #define XSIZEMIN   0
@@ -30,11 +32,13 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
 	SetDrawScreen(DX_SCREEN_BACK);
 
-
-
+	Field field(10,10);
+	
 	while (ProcessMessage() == 0)
 	{
-		
+		MasterButton::main();
+		field.Update();
+		field.Draw();
 		DxLibDefault();
 		if (CheckHitKey(KEY_INPUT_ESCAPE)) {
 			break;
