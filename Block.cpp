@@ -14,11 +14,18 @@ Block::Block(int x,int y){
 	this->x = x;
 	this->y = y;
 	existF = true;
+	newMonsterF = false;
 }
 
 void Block::Update(){
+	newMonsterF = false;
 	if (GetClick()) {
-		existF = false;
+		if (existF == true) {
+			existF = false;
+			if (nourishment > 0) {
+				newMonsterF = true;
+			}
+		}
 	}
 }
 
