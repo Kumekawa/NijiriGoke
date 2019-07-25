@@ -3,7 +3,7 @@
 
 class Block :public BaseButton{
 	int nourishment;
-	int majic;
+	int magic;
 	bool existF;
 	bool newMonsterF;
 public:
@@ -12,5 +12,14 @@ public:
 	void Draw();
 	bool GetMonsterF() {
 		return newMonsterF;
+	}
+	bool GetExistF() {
+		return existF;
+	}
+	int GetNourishment() {
+		return nourishment;
+	}
+	int GetMagic() {
+		return magic;
 	}
 };

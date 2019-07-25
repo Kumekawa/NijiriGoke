@@ -7,7 +7,7 @@ using namespace std;
 
 Block::Block(int x,int y){
 	nourishment = GetRand(10);
-	majic = GetRand(10);
+	magic = GetRand(10);
 
 	xSize = 100;
 	ySize = xSize;
